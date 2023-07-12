@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+}
+#cenario{
+    background: url("imgs/terror/cadeira_2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 500px ;
+    height: 100vh;
+    margin: auto;
+    animation: piscar 5s ease infinite ;
+}
+.boneco{
+    position: relative;
+    top: 170px;
+    left: 90px;
+    /* width: 150px; */
+    animation: aparece 10s ease infinite ;
+}
+@keyframes piscar {
+    0% {
+        filter: brightness(1);
+      }
+      50% {
+        filter: brightness(0.2);
+      }
+      100% {
+        filter: brightness(1);
+      }
+      
+}
+@keyframes aparece {
+    0% {
+        filter: brightness(0.2);
+        opacity: 0;
+      }
+      50% {
+        
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+}

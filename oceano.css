@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+}
+#container{
+    background: linear-gradient(0, #120c56, #171717);
+    width: 500px;
+    height: 100vh;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+.onda{
+    position: absolute;
+    animation: moveAnimation 6s ease infinite;
+
+}
+
+.onda_1{
+    bottom: 70px;
+    
+}
+.onda_2{
+    bottom: 120px;
+    left: -300px;
+  
+}
+.onda_3{
+    bottom: 70px;
+    left: -200px;
+    
+}
+.onda_4{
+    bottom: 70px;
+    left: -320px;
+   
+}
+.onda_5{
+    bottom: 70px;
+    left: -650px;
+}
+.onda_6{
+    bottom: 80px;
+    left: -600px;
+}
+
+#agua{
+    position: absolute;
+
+    bottom: 0;
+    background: url("imgs/ondinhas_2.png");
+    background-repeat: repeat-x;
+    
+    height: 20vh;
+    width: 100%;
+
+}
+@keyframes moveAnimation {
+    0% {
+      transform: translateX(0);
+    }
+
+  
+    50%{
+        transform: translateX(50%) translateY(10%);
+    }
+
+    100% {
+      transform: translateX(100%);
+    }
+    
+  }
+
+  .nuvens{
+    position: absolute;
+    animation: mover 40s 0s infinite;
+    width: 2000px;
+    /* left: -250p; */
+  }
+  @keyframes mover {
+    0%{
+        transform: translateX(-70%);
+    }
+   
+   
+  
+   
+    100% {
+        transform: translateX(-3%);
+      }
+  }

@@ -1,0 +1,221 @@
+.loading {
+    background: linear-gradient(0, #120c56, #000000);
+    position: relative;
+    width: 500px;
+    height: 500px;
+   
+    margin: auto;
+    display: block;
+    
+    overflow: hidden;
+
+}
+.estrela {
+
+    margin: 10px 0;
+    
+    display: block;
+    width: 7px;
+    height: 7px;
+  
+    background-color: white;
+    border-radius: 50%;
+    transform: rotate(180deg);
+   
+
+}
+
+
+.stars2{
+    position: relative;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    box-shadow: 15px 15px white,
+      125px 35px white,
+      50px 80px white,
+      10px 120px white,
+      275px 90px white,
+      230px 10px white,
+      120px 130px white,
+      300px 130px white,
+      220px 115px white,
+      450px 450px white,
+      375px 50px white,
+      480px 10px white,
+      425px 115px white,
+      370px 95px white,
+      235px 200px white,
+      30px 223px white,
+      88px 344px white,
+      167px 466px white,
+      345px 244px white,
+      389px 200px white,
+      300px 350px white;
+    
+  }
+  
+  .stars2::after{
+    content: " ";
+    position: absolute;
+    top: 150px;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    box-shadow: 15px 15px white,
+      125px 35px white,
+      50px 80px white,
+      10px 120px white,
+      275px 90px white,
+      230px 10px white,
+      120px 130px white,
+      300px 130px white,
+      220px 115px white
+      450px 450px white,
+      375px 50px white,
+      235px 200px white;
+  }
+
+ /*Box Estrela*/
+.box-estrela .estrela {
+    position: absolute;
+    transform: rotate(180deg) scale(0.5);
+    opacity: 0.8;
+}
+
+.box-estrela .estrela,
+.box-estrela .estrela:before,
+.box-estrela .estrela:after {
+    border-bottom-color: white;
+
+}
+
+
+.box-estrela .estrela1 {
+    
+    
+    -webkit-animation: motion-stars  3s linear infinite;
+    animation: motion-stars 3s linear infinite;
+}
+
+.box-estrela .estrela2 {
+    left: 55px;
+    top: 410px;
+    opacity: 0;
+    -webkit-animation: motion-stars  3s 4.5s linear infinite;
+    animation: motion-stars 3s 4.5s linear infinite;
+}
+
+.box-estrela .estrela3 {
+    left: 40%;
+    top: 30%;
+    opacity: 0;
+    -webkit-animation: motion-stars  3s 3.2s linear infinite;
+    animation: motion-stars 3s 3.2s linear infinite;
+}
+
+.box-estrela .estrela4 {
+    top: 0%;
+    left: 277px;
+    opacity: 0;
+    -webkit-animation: motion-stars  3s 0.5 linear infinite;
+    animation: motion-stars 3s 0.5 linear infinite;
+}
+
+.box-estrela .estrela5 {
+
+    left: 150px;
+    opacity: 0;
+    -webkit-animation: motion-stars 3s 2.5s linear infinite;
+    animation: motion-stars 3s 2.5s linear infinite;
+}
+
+.box-estrela .estrela6 {
+    top: 100px;
+    left: -15px;
+    opacity: 0;
+    -webkit-animation: motion-stars  3s 1.5s linear infinite;
+    animation: motion-stars 3s 1.5s linear infinite;
+}
+
+.box-estrela .estrela7 {
+    top: 100px;
+    left: 400px;
+    opacity: 0;
+    -webkit-animation: motion-stars  3s 5s linear infinite;
+    animation: motion-stars 3s 5s linear infinite;
+}
+
+.box-estrela .estrela8 {
+    top: -10px;
+    left: 155px;
+    opacity: 0;
+    -webkit-animation: motion-stars  3s 17s linear infinite;
+    animation: motion-stars 3s 17s linear infinite;
+    
+}
+
+ /* @-webkit-keyframes motion-stars {
+    0% {
+        opacity: 0.1;
+        transform: rotate(180deg) translate(0, 0) scale(0.1);
+    }
+    25% {
+        opacity: 0.2;
+        transform: rotate(180deg) translate(-100px, -100px)  scale(0.2);
+    }
+    50% {
+        opacity: 0.5;
+        transform: rotate(180deg) translate(-200px, -200px) scale(0.5) ;
+    }
+    75% {
+        opacity: 0.75;
+        transform: rotate(180deg) translate(-350px, -350px) scale(0.75);
+    }
+  
+    100% {
+        opacity: 1;
+        transform: rotate(180deg) translate(-500px, -500px)scale(1) ;
+    }
+} */
+ @keyframes motion-stars {
+    0% {
+        opacity: 0;
+        transform: rotate(180deg) translate(0, 0) scale(0.1);
+    }
+    25% {
+        opacity: 0.25;
+        box-shadow:
+    10px 10px 10px #dbdada,
+    20px 20px 20px #acabab,
+    25px 25px 20px #959595,
+  
+    30px 30px 20px #666,
+    40px 40px 20px #555,
+    50px 50px 20px #444;
+        transform: rotate(180deg)  translate(-100px, -100px)  scale(0.2);
+    }
+    50% {
+        opacity: 0.5;
+        transform: rotate(180deg) translate(-200px, -200px) scale(0.5) ;
+    }
+    75% {
+        opacity: 0.75;
+        box-shadow:
+    10px 10px 10px #dbdada,
+    20px 20px 20px #acabab,
+    25px 25px 20px #959595,
+  
+    30px 30px 10px #7a7a7a,
+    40px 40px 10px #737272,
+    50px 50px 10px #444;
+        transform: rotate(180deg) translate(-300px, -300px) scale(0.75);
+    }
+  
+    100% {
+        opacity: 1;
+        transform: rotate(180deg) translate(-450px, -450px)scale(1) ;
+    }
+}
+
+ 

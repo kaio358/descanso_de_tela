@@ -1,0 +1,241 @@
+body{
+    margin: 0;
+}
+#cenario{
+  
+    width:500px;
+    height: 100vh;
+    margin: auto;
+    overflow: hidden;
+}
+#parede{
+    position: absolute;
+    background: url("imgs/castelo/cenario/parede.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 200px;
+}
+.chao{
+    position: relative;
+    background: url("imgs/castelo/cenario/chao_2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    top: 200px;
+}
+
+.estatua{
+    position: absolute;
+   
+    top: -110px;
+    height: 200px;
+    z-index: 1;
+}
+.pilar{
+    position: absolute;
+   
+    top: 300px;
+    height: 200px;
+
+
+    z-index: 1;
+}
+.pilar_direita{
+    right: 510px;
+}
+.pilar_esquerda{
+    left: 511px;
+}
+.estandarte{
+    position: absolute;
+   
+    top: 70px;
+    left: 200px;
+    height: 130px;
+    z-index: 1;
+}
+#bau{
+    position: absolute;
+    height: 60px;
+    left: 215px;
+    z-index: 1;
+}
+.tapete{
+    position: relative;
+    top: 30px;
+    left: 50px;
+    width: 210px;
+}
+/* personagens */
+.dragao{
+    position: relative;
+    left: 500px;
+
+    animation: run_drag 3s 1.5s steps(13) infinite;
+    /* -webkit-animation: run_drag 1.5s 1.5s steps(13) infinite; */
+    background: url("imgs/castelo/dragao_voando/img_1.1.png");
+   
+    transform: scaleX(-1);
+    background-repeat: no-repeat;
+    
+    height: 200px;
+    width: 200px;  
+}
+.cavaleiro{
+    
+    position: relative;
+    top: 120px;
+    left: 500px;
+    
+    background: url("imgs/castelo/cavaleiro_correndo/img_1.png");
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;  
+    animation: correndo_cavaleiro 3s 2s steps(10) infinite;
+    -webkit-animation: correndo_cavaleiro 3s 2s steps(10) infinite;
+}
+
+.princesa{
+    position: relative;
+    left: 200px;
+    width: 70px; 
+    z-index: 1;
+
+}
+/* emoji */
+.interrogacao{
+    position: absolute;
+    left: 185px;
+    top: -30px;
+    animation: duvida 8s infinite;
+}
+
+@keyframes correndo_cavaleiro{  
+    0% {
+        background: url("imgs/castelo/cavaleiro_correndo/img_1.png");
+        background-repeat: no-repeat;
+        transform: translateX(-77%);
+        }
+    
+    12%{
+        background: url("imgs/castelo/cavaleiro_correndo/img_2.png");
+        background-repeat: no-repeat;
+        transform: translateX(-175%);
+    }
+    24%{
+        background: url("imgs/castelo/cavaleiro_correndo/img_3.png");
+        background-repeat: no-repeat;
+        transform: translateX(-350%);
+        
+    }
+    36% {
+        background: url("imgs/castelo/cavaleiro_correndo/img_4.png");
+        transform: translateX(-525%);
+        background-repeat: no-repeat; 
+    }
+    48% {
+        background: url("imgs/castelo/cavaleiro_correndo/img_5.png");
+        transform: translateX(-700%);
+        background-repeat: no-repeat; 
+    }
+    60% {
+        background: url("imgs/castelo/cavaleiro_correndo/img_6.png");
+        transform: scaleX(-1) translateX(525%);
+        background-repeat: no-repeat; 
+    }
+    72% {
+        background: url("imgs/castelo/cavaleiro_correndo/img_7.png");
+        transform: scaleX(-1) translateX(350%);
+        background-repeat: no-repeat; 
+    }
+    84% {
+        background: url("imgs/castelo/cavaleiro_correndo/img_8.png");
+        transform: scaleX(-1) translateX(175%);
+        background-repeat: no-repeat; 
+    }
+    100% {
+        background: url("imgs/castelo/cavaleiro_correndo/img_2.png");
+    
+        transform: scaleX(-1) translateX(-77%);
+        background-repeat: no-repeat; 
+    }
+  }
+@keyframes run_drag {
+    8% {
+        
+        background: url("imgs/castelo/dragao_voando/img_1.1.png");
+        transform: scaleX(-1) translateX(66%);
+        background-repeat: no-repeat;
+        } 
+    16%{
+        background: url("imgs/castelo/dragao_voando/img_2.png");
+        transform: scaleX(-1) translateX(132%);
+        background-repeat: no-repeat;
+    }
+    24%{
+        background: url("imgs/castelo/dragao_voando/img_3.png");
+        transform: scaleX(-1) translateX(198%);
+        background-repeat: no-repeat;
+    }
+    32%{
+        background: url("imgs/castelo/dragao_voando/img_4.png");
+        transform: scaleX(-1) translateX(264%);
+        background-repeat: no-repeat;
+    }
+    40% {
+        background: url("imgs/castelo/dragao_voando/img_5.png");
+        transform: scaleX(-1) translateX(330%);
+        background-repeat: no-repeat;
+        } 
+    50%{
+        background: url("imgs/castelo/dragao_voando/img_6.png");
+        transform: scaleX(-1) translateX(400%);
+        background-repeat: no-repeat;
+    }
+    58%{
+        background: url("imgs/castelo/dragao_voando/img_7.png");
+        transform:  translateX(-342%);
+        background-repeat: no-repeat;
+    }
+    66%{
+        background: url("imgs/castelo/dragao_voando/img_8.png");
+        transform:  translateX(-285%);
+        background-repeat: no-repeat;
+    }
+    74%{
+        background: url("imgs/castelo/dragao_voando/img_9.png");
+        transform:  translateX(-228%);
+        background-repeat: no-repeat;
+    }
+    82%{
+        background: url("imgs/castelo/dragao_voando/img_10.png");
+        transform: translateX(-171%);
+        background-repeat: no-repeat;
+    }
+    90%{
+        background: url("imgs/castelo/dragao_voando/img_11.png");
+        transform:  translateX(-114%);
+        background-repeat: no-repeat;
+    }
+    100%{
+        background: url("imgs/castelo/dragao_voando/img_12.png");
+       
+        transform:  translateX(0%);
+        background-repeat: no-repeat;
+     
+    }
+    
+   
+}
+@keyframes duvida {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
